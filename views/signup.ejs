@@ -1,0 +1,23 @@
+
+<section>
+    <h1>Sign Up</h1>
+    <% if (message) { %>
+        <p><%= message %></p>
+    <% } %>
+    <form action="/user/signup" method="post">
+        <input type="text" name="username" placeholder="username" autocomplete="off" required><br>
+        <input type="email" name="email" placeholder="Email" autocomplete="off" required><br>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" required><br><br>
+        <input type="password" name="cpassword" placeholder="Confirm Password" autocomplete="off" required><br><br>
+        <!-- <div class="g-recaptcha" data-sitekey="Add-site-key"></div> -->
+        <button type="submit">Sign Up</button>
+    </form>
+    <br>
+    <!-- Sign-up Google Auth -->
+    <a href="/auth/google"><i class="fab fa-google"></i>Sign In with Google</a>
+
+    <p>Already have an account? <a href="/user/signin"><i class="fas fa-user-plus"></i>Sign in</a></p>
+    <!-- Link to sign-in page -->
+
+</section>
+

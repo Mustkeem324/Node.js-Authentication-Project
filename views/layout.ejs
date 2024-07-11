@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Authentication</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            animation: slideInHeader 0.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: slideInFooter 0.5s ease-out;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            padding-bottom: 60px; /* To make space for the fixed footer */
+        }
+
+        /* Section styles */
+        section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInSection 0.5s ease-out, slideInSection 0.5s ease-out;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInForm 0.5s ease-out, slideInForm 0.5s ease-out;
+        }
+
+        /* Input styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #555;
+        }
+
+        /* Button styles */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Animation styles */
+        @keyframes fadeInForm {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInForm {
+            from { transform: translateY(20px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes slideInHeader {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes slideInFooter {
+            from { transform: translateY(20px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInSection {
+            from { transform: translateY(20px); }
+            to { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Node Authentication</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to Node Authentication</h2>
+            <p>This section provides an overview of the Node Authentication system. Use the form below to log in or register.</p>
+        </section>
+        <!-- This is where content from other pages will be injected -->
+        <%- body %>
+    </main>
+    <footer>
+        <p>&copy; 2024 Node Authentication. All rights reserved.</p>
+    </footer>
+</body>
+</html>
