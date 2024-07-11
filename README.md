@@ -4,7 +4,7 @@ This Node.js application provides robust authentication features including sign-
 
 ## Live Demo
 
-Explore the live demo [here]().
+Explore the live demo [here](https://6f911064-991f-4f65-981c-2c530ccf5639-00-28i27l1i2rv3i.pike.replit.dev/).
 
 ## Features
 
